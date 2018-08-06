@@ -37,8 +37,8 @@ int main(void)
                  (OS_OPT      )OS_OPT_TASK_STK_CHK|OS_OPT_TASK_STK_CLR,
                  (OS_ERR 	* )&err);				
 	OS_CRITICAL_EXIT();	
-	OSStart(&err);   
-
+	OSStart(&err); 
+	OSTaskDel(&StartTaskTCB,&err);
 }
 
 //开始任务任务函数
@@ -66,8 +66,10 @@ void start_task(void *p_arg)
 
 	OS_CRITICAL_ENTER();	//进入临界区
 
+//  Greate_Create_Delete_Task();
+//		Greate_Suspend_Task();
+	Greate_Sched_Task();
 	Great_Heat_Task();
-
 
 	OS_CRITICAL_EXIT();	//退出临界区
 	OSTaskDel((OS_TCB*)0,&err);	//删除start_task任务自身

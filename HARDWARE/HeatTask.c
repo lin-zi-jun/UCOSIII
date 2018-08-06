@@ -45,7 +45,6 @@ void heat_task(void)
 				sprintf((char *)TempBuf,"%.2d:",TimerTemp);
 				strcat((char*)TimerBuf,(char*)TempBuf);
 
-
 				memset(TempBuf,0,32);
 				TimerTemp=0;
 				TimerTemp=HeatTimer%60;

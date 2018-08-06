@@ -433,6 +433,21 @@
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\HeatTask.c</FilePath>
             </File>
+            <File>
+              <FileName>Create_Delete.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\Create_Delete.c</FilePath>
+            </File>
+            <File>
+              <FileName>Suspend.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\Suspend.c</FilePath>
+            </File>
+            <File>
+              <FileName>Sched.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\Sched.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
